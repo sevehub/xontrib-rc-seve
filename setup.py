@@ -20,14 +20,8 @@ setuptools.setup(
     install_requires=[
         'xonsh[full]', # The awesome shell.
         'xontrib-prompt-bar', # The bar prompt for xonsh shell with customizable sections and Starship support. 
-        'xontrib-back2dir', # Return to the most recently used directory when starting the xonsh shell. 
-        'xontrib-sh', # Paste and run commands from bash, zsh, fish, tcsh in xonsh shell. 
-        'xontrib-pipeliner', # Let your pipe lines flow thru the Python code in xonsh. 
-        'xontrib-output-search', # Get identifiers, names, paths, URLs and words from the previous command output and use them for the next command in xonsh. 
+        'xontrib-zoxide', # Return to the most recently used directory when starting the xonsh shell. 
         'xontrib-argcomplete', # Argcomplete support to tab completion of python and xonsh scripts in xonsh shell. 
-        'xontrib-cmd-durations', # Show long running commands durations in prompt with option to send notification when terminal is not focused. 
-        'xontrib-jedi', # Jedi - an awesome autocompletion, static analysis and refactoring library for Python
-        'xontrib-jump-to-dir', # Jump to used before directory by part of the path. Lightweight zero-dependency implementation of autojump or zoxide projects functionality. 
         'xontrib-clp', # Copy output to clipboard. URL: https://github.com/anki-code/xontrib-clp
         
         # Get more xontribs:
