@@ -41,10 +41,12 @@ if __xonsh__.env.get('XONTRIB_RC_AWESOME_SHELL_TYPE_CHECK', True) and $SHELL_TYP
 # It will be good to read 
 #  - https://github.com/anki-code/xonsh-cheatsheet#three-most-frequent-things-that-newcomers-missed
 #  - https://github.com/xonsh/xonsh/issues/4152#issue-823993141
+
+$PROMPT = '{env_name}{BOLD_GREEN}{user}{BOLD_WHITE} {cwd}{branch_color}{curr_branch: {}}{RESET} {RED}{last_return_code_if_nonzero:[{BOLD_ORANGE}{}{RED}] }{RESET}{BOLD_YELLOW}{prompt_end}{RESET}'
 $PROMPT_FIELDS['prompt_end'] = '@'
 
 # Add xontrib-cmd-durations to right prompt.
-$RIGHT_PROMPT = '{long_cmd_duration}'
+# $RIGHT_PROMPT = '{long_cmd_duration}'
 
 # The SQLite history backend saves command immediately 
 # unlike JSON backend that save the commands at the end of the session.
